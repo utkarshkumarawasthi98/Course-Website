@@ -1,0 +1,137 @@
+/* Reset basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Light neutral background */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Header Section */
+header {
+    width: 100%;
+    background-color: #003366; /* Navy blue for the top banner */
+    color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    color: #cce0ff; /* Light blue for subtle contrast */
+}
+
+/* Main content styling */
+.chapter-list {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Chapter Box */
+.chapter {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+
+.chapter:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.chapter-title {
+    background-color: #008080; /* Teal for chapter title */
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin: 0;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.chapter-title:hover {
+    background-color: #006666; /* Darker teal for hover effect */
+}
+
+/* Lecture List */
+.lecture-list {
+    display: none; /* Initially hidden */
+    padding: 15px;
+    background-color: #f3f4f6; /* Light gray for lecture list background */
+}
+
+.lecture {
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.lecture:last-child {
+    border-bottom: none;
+}
+
+/* Lecture Links Styling */
+a {
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    color: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Video Link - Gradient and Styling */
+.video-link {
+    background: linear-gradient(45deg, #0099cc, #33cccc); /* Teal gradient */
+}
+
+.video-link:hover {
+    background: linear-gradient(45deg, #0077aa, #0099cc); /* Darker teal gradient on hover */
+}
+
+/* Sheet Link - Gradient and Styling */
+.sheet-link {
+    background: linear-gradient(45deg, #ff6f61, #ff9a87); /* Coral gradient */
+}
+
+.sheet-link:hover {
+    background: linear-gradient(45deg, #e65b50, #ff6f61); /* Darker coral gradient on hover */
+}
+
+/* Icons */
+i {
+    font-size: 1.2rem;
+}
